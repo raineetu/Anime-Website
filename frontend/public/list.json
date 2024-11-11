@@ -1,0 +1,483 @@
+[
+    {
+        "otherName": "Wan Pīsu (ワンピース)",
+        "id": 1,
+        "title": "One Piece",
+        "type": "TV",
+        "description": "Gold Roger was known as the Pirate King, the strongest and most infamous being to have sailed the Grand Line. The capture and execution of Roger by the World Government brought a change throughout the world. His last words before his death revealed the existence of the greatest treasure in the world, One Piece.",
+        "imageUrl": "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/a249096c7812deb8c3c2c907173f3774.jpg",
+        "genre": "Action",
+        "released": "2024-01-01T00:00:00.000Z",
+        "status": "Ongoing",
+        "prevSlide": 10,
+        "nextSlide": 2,
+        "videoUrl": "https://www.youtube.com/watch?v=gt61WFQ-Uu0",
+        "episode": [
+            {
+                "number": 1,
+                "title": "The Beginning",
+                "videoUrl": "https://www.youtube.com/watch?v=gt61WFQ-Uu0"
+            },
+            {
+                "number": 2,
+                "title": "The Adventure Continues",
+                "videoUrl": "https://www.youtube.com/watch?v=zwA3BXqHp9A"
+            },
+            {
+                "number": 3,
+                "title": "Luffy's Journey",
+                "videoUrl": "https://www.youtube.com/watch?v=xmbxe0Jtxmc"
+            },
+            {
+                "number": 4,
+                "title": "Luffy meets the PIRATE HUNTER",
+                "videoUrl": "https://www.youtube.com/watch?v=yNjKNh4bhms"
+            },
+            {
+                "number": 5,
+                "title": "Nami crys",
+                "videoUrl": "https://www.youtube.com/watch?v=C4lzmfrkemw"
+            },
+            {
+                "number": 6,
+                "title": "Ussop joins the crew",
+                "videoUrl": "https://www.youtube.com/watch?v=q2QyP9JbBYo"
+            }
+        ]
+    },
+    {
+        "otherName": "Shingeki no Kyojin (進撃の巨人)",
+        "id": 2,
+        "title": "Attack on Titan",
+        "type": "TV",
+        "description": "In the wake of Eren Yeager's cataclysmic actions, his friends and former enemies form an alliance against his genocidal rampage. Though once bitter foes, Armin Arlert, Mikasa Ackerman, and the remaining members of the Scout Regiment join forces with Reiner Braun and the survivors of the Marleyan military. Their meager united front sets out on a mission to stop Eren's wrath and—if possible—save their old comrade in the process.",
+        "imageUrl": "https://images6.alphacoders.com/653/thumb-1920-653538.jpg",
+        "genre": "Action",
+        "released": "2013-01-01T00:00:00.000Z",
+        "status": "Finished Airing",
+        "prevSlide": 1,
+        "nextSlide": 3,
+        "videoUrl": "https://www.youtube.com/watch?v=yLhjFXkPpck",
+        "episode": [
+          {
+              "number": 1,
+              "title": "To you two thousand years later",
+              "videoUrl": "https://www.youtube.com/watch?v=LV-nazLVmgo"
+          },
+          {
+              "number": 2,
+              "title": "That day",
+              "videoUrl": "https://www.youtube.com/watch?v=X2WGyFRKb8Y"
+          },
+          {
+              "number": 3,
+              "title": "Shining Dimly in the Midst of Despair",
+              "videoUrl": "https://www.youtube.com/watch?v=wXzA3ZoN0pE"
+          },
+          {
+              "number": 4,
+              "title": "Night of Disbanding",
+              "videoUrl": "https://www.youtube.com/watch?v=pvoxj-aXP9E"
+          }
+  
+        ]
+    },
+    {
+        "otherName": "Kimi no Na wa (君の名は。)",
+        "id": 3,
+        "title": "Your Name",
+        "type":"Movie",
+        "description": "Mitsuha Miyamizu, a high school girl, yearns to live the life of a boy in the bustling city of Tokyo—a dream that stands in stark contrast to her present life in the countryside. Meanwhile in the city, Taki Tachibana lives a busy life as a high school student while juggling his part-time job and hopes for a future in architecture.",
+        "imageUrl": "https://images2.alphacoders.com/742/742320.png",
+        "genre": "Romance",
+        "released": "2016-01-01T00:00:00.000Z",
+        "status": "Finished Airing",
+        "prevSlide": 2,
+        "nextSlide": 4,
+        "videoUrl": "https://www.youtube.com/watch?v=NooIc3dMncc",
+        "episode": [
+          {
+              "title": "Episode 1",
+              "videoUrl": "https://www.youtube.com/watch?v=NooIc3dMncc"
+          }
+        ]
+    },
+    {
+        "otherName": " Boku no Hīrō Akademia (僕のヒーローアカデミア)",
+        "id": 4,
+        "title": "My Hero Academia",
+        "type":"TV",
+        "description": "Middle scholler Izuku Midoriya has no Quirk of his own, but that doesn't stop him of dreaming of becoming a Hero. In this meantime, he's just herioc",
+        "imageUrl": "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/ad3c6bbdc8d6e3a236292f3e8223f852.jpg",
+        "genre": "Action",
+        "released": "2016-01-01T00:00:00.000Z",
+        "status": "Ongoing",
+        "prevSlide": 3,
+        "nextSlide": 5,
+        "videoUrl": "https://www.youtube.com/watch?v=X_r-M3coFe4&t=3s",
+        "episode": [
+          {
+          "number": 1,
+          "title": "In the Nick of Time!",
+          "videoUrl": "https://www.youtube.com/watch?v=SQ4oRhtpK9g"
+      },
+      {
+          "number": 2,
+          "title": "Specter",
+          "videoUrl": "https://www.youtube.com/watch?v=POOsNx8_8pI"
+      },
+      {
+          "number": 3,
+          "title": "Villain",
+          "videoUrl": "https://www.youtube.com/watch?v=OtIksPJnWYw"
+      },
+      {
+          "number": 4,
+          "title": "The story of how we became heroes",
+          "videoUrl": "https://www.youtube.com/watch?v=POOsNx8_8pI"
+      }
+        ]
+    },
+    {
+        "otherName": "Hagane no Renkinjutsushi: Furumetaru Arukemisuto",
+        "id": 5,
+        "title": "Fullmetal Alchemist: Brotherhood",
+        "type": "Movie",
+        "description": "In order for something to be obtained, something of equal value must be lost. Alchemy is bound by this Law of Equivalent Exchange—something the young brothers Edward and Alphonse Elric only realize after attempting human transmutation: the one forbidden act of alchemy. ",
+        "imageUrl": "https://static1.thegamerimages.com/wordpress/wp-content/uploads/2021/07/fullmetal-alchemist-brotherhood-(1).jpg",
+        "genre": "Adventure",
+        "released": "2009-01-01T00:00:00.000Z",
+        "status": "Finished Airing",
+        "prevSlide": 4,
+        "nextSlide": 6,
+        "videoUrl":"https://www.youtube.com/watch?v=kx0nBaS_q50",
+        "episode": [
+          {
+              "title": "Episode 1",
+              "videoUrl": "https://www.youtube.com/watch?v=kx0nBaS_q50"
+          }
+        ]
+    },
+    {
+        "otherName": "Gekijō-ban Naruto Shippūden",
+        "id": 6,
+        "title": "Naruto: Shippuden",
+        "type":"Movie",
+        "description": "A group of ninja is planning to revive a powerful demon, and once its spirit is reunited with its body, the world will be destroyed. The only way to prevent this from happening is for Shion, a shrine maiden, to seal it away for good.",
+        "imageUrl": "https://media.thepopverse.com/media/naruto-shippuden-kq2f53uywluejlrsa0sph2inkm.png",
+        "genre": "Action",
+        "released": "2007-01-01T00:00:00.000Z",
+        "status": "Finished Airing",
+        "prevSlide": 5,
+        "nextSlide": 7,
+        "videoUrl":"https://www.youtube.com/watch?v=qi2rByJed-E",
+        "episode": [
+          {
+              "title": "Episode 1",
+              "videoUrl": "https://www.youtube.com/watch?v=qi2rByJed-E"
+          }
+        ]
+    },
+    {
+        "otherName": "Shutainzu Gēto",
+        "id": 7,
+        "title": "Steins;Gate",
+        "type":"Movie",
+        "description": "With Valentine's Day just around the corner, the girls of the Future Gadget Lab discover that Kagari has never celebrated the occasion before! Determined to make this year's holiday the best one yet, they all set out to make delicious homemade chocolates together. However, with many of their quirks causing kitchen disasters, this may prove to be too hard a task.",
+        "imageUrl": "https://i0.wp.com/www.maroonersrock.com/wp-content/uploads/2012/12/Steins-Gate.jpg",
+        "genre": "Sci-Fi",
+        "released": "2011-01-01T00:00:00.000Z",
+        "status": "Finished Airing",
+        "prevSlide": 6,
+        "nextSlide": 8,
+        "videoUrl":"https://www.youtube.com/watch?v=uMYhjVwp0Fk",
+        "episode": [
+          {
+              "title": "Episode 1",
+              "videoUrl": "https://www.youtube.com/watch?v=uMYhjVwp0Fk"
+          }
+        ]
+    },
+    {
+        "otherName": "Kimetsu no Yaiba (鬼滅の刃)",
+        "id": 8,
+        "title": "Demon Slayer",
+        "type":"Movie",
+        "description": "Demon Slayer: Kimetsu no Yaiba -To the Swordsmith Village- is a feature-length cut of Episodes 10 and 11 of the Entertainment District Arc along with the extended Episode 1 of the upcoming Swordsmith Village Arc",
+        "imageUrl": "https://www.pinkvilla.com/english/images/2023/07/1625219579_img_9732-1_1280*720.jpg",
+        "genre": "Action",
+        "released": "2019-01-01T00:00:00.000Z",
+        "status": "Ongoing",
+        "prevSlide": 7,
+        "nextSlide": 9,
+        "videoUrl":"https://www.youtube.com/watch?v=DuH3VpwRWDM",
+        "episode": [
+          {
+              "title": "Episode 1",
+              "videoUrl": "https://www.youtube.com/watch?v=DuH3VpwRWDM"
+          }
+        ]
+    },
+    {
+        "otherName": "Death Note",
+        "id": 9,
+        "title": "Death Note",
+        "type":"TV",
+        "description": "A shinigami, as a god of death, can kill any person—provided they see their victim's face and write their victim's name in a notebook called a Death Note. One day, Ryuk, bored by the shinigami lifestyle and interested in seeing how a human would use a Death Note, drops one into the human realm. High school student and prodigy Light Yagami stumbles upon the Death Note and—since he deplores the state of the world—tests the deadly notebook by writing a criminal's name in it. When the criminal dies immediately following his experiment with the Death Note, Light is greatly surprised and quickly recognizes how devastating the power that has fallen into his hands could be.",
+        "imageUrl": "https://i.scdn.co/image/ab67616d0000b273d4cafdffd73a6d7bdb4a1439",
+        "genre": "Thriller",
+        "released": "2006-01-01T00:00:00.000Z",
+        "status": "Finished Airing",
+        "prevSlide": 8,
+        "nextSlide": 10,
+        "videoUrl":"https://www.youtube.com/watch?v=NlJZ-YgAt-c",
+        "episode": [
+          {
+              "number": 1,
+              "title": "Rebirth",
+              "videoUrl": "https://www.youtube.com/watch?v=Kz9hcide-YQ"
+          },
+          {
+              "number": 2,
+              "title": "Confornation",
+              "videoUrl": "https://www.youtube.com/watch?v=lcjA-YC6S0k"
+          }
+        ]
+    },
+    {
+        "otherName": "Doragon Bōru Zetto (ドラゴンボールゼット)",
+        "id": 10,
+        "title": "Dragon Ball Z",
+        "type":"Movie",
+        "description": "Dr. Raichii is the only Tsufurujin (the race eradicated by the Saiyajin many years ago) thought to have survived. He now is going to take revenge on the only surviving Saiyajin still alive, Goku and Vegita",
+        "imageUrl": "https://img.20mn.fr/cV3LuwV7TMuC3kydQMHbQA/1444x920_dragon-ball-super-nouvelle-serie-suite-directe-dragon-ball-z",
+        "genre": "Action",
+        "released": "1989-01-01T00:00:00.000Z",
+        "status": "Finished Airing",
+        "videoUrl" :"https://www.youtube.com/watch?v=fAfLl6_0h7Y&list=PLRe9ARNnYSY6NsG74U-Vcx4w5pmRVOmTX&index=2",
+        "episode": []
+    },
+    {
+        "otherName": "Hunter x Hunter",
+        "id": 11,
+        "title": "Hunter x Hunter",
+        "type":"Movie",
+        "description": "Nen: the hidden source of energy and potential that runs through everyone, and gives those that master it a source of great power. Inside Nen is the potential for limitless light and limitless darkness.",
+        "imageUrl": "https://i.blogs.es/bcd505/hunter-x-hunter/1366_2000.jpeg",
+        "genre": "Action",
+        "released": "2011-01-01T00:00:00.000Z",
+        "status": "Ongoing",
+        "videoUrl":"https://www.youtube.com/watch?v=Txl2imn11bM",
+        "episode": []
+    },
+    {
+        "otherName": "Sword Art Online",
+        "id": 12,
+        "title": "Sword Art Online",
+        "type":"TV",
+        "description": "In the year 2022, virtual reality has progressed by leaps and bounds, and a massive online role-playing game called Sword Art Online (SAO) is launched. With the aid of NerveGear technology, players can control their avatars within the game using nothing but their own thoughts. Kazuto Kirigaya, nicknamed Kirito, is among the lucky few enthusiasts who get their hands on the first shipment of the game. ",
+        "imageUrl": "https://roadtovrlive-5ea0.kxcdn.com/wp-content/uploads/2014/07/sword-art-online-oculus-rift-virtual-reality.jpeg",
+        "genre": "Fantasy",
+        "released": "2012-01-01T00:00:00.000Z",
+        "status": "Ongoing",
+        "videoUrl":"https://www.youtube.com/watch?v=lK65LZWZ2TE&list=PLRe9ARNnYSY6q-_DxJs_kXX9lko0oDcJ2",
+        "episode": [
+          {
+              "number": 1,
+              "title": "The world of swords",
+              "videoUrl": "https://www.youtube.com/watch?v=2WJQOX7U3iA&list=PLRe9ARNnYSY6q-_DxJs_kXX9lko0oDcJ2&index=2"
+          },
+          {
+              "number": 2,
+              "title": "Beater",
+              "videoUrl": "https://www.youtube.com/watch?v=Kk9CMTr22CE&list=PLRe9ARNnYSY6q-_DxJs_kXX9lko0oDcJ2&index=3"
+          },
+          {
+              "number": 3,
+              "title": "The red-nosed reindeer",
+              "videoUrl": "https://www.youtube.com/watch?v=XgmtsUU89kk&list=PLRe9ARNnYSY6q-_DxJs_kXX9lko0oDcJ2&index=4"
+          },
+          {
+              "number": 4,
+              "title": "The black Swordsman",
+              "videoUrl": "https://www.youtube.com/watch?v=TVWvolD_IL4&list=PLRe9ARNnYSY6q-_DxJs_kXX9lko0oDcJ2&index=5"
+          }
+        ]
+    },
+    {
+        "otherName": "Tokyo Ghoul",
+        "id": 13,
+        "title": "Tokyo Ghoul",
+        "type":"TV",
+        "description": "Tokyo has become a cruel and merciless city—a place where vicious creatures called ghouls exist alongside humans. The citizens of this once great metropolis live in constant fear of these bloodthirsty savages and their thirst for human flesh.",
+        "imageUrl": "https://cdn.oneesports.gg/cdn-data/2023/09/TokyoGhoul_BreaktheChains_KeyVisual_Cropped.jpg",
+        "genre": "Horror",
+        "released": "2014-01-01T00:00:00.000Z",
+        "status": "Finished Airing",
+        "videoUrl":"https://www.youtube.com/watch?v=7aMOurgDB-o&list=PLRe9ARNnYSY588zvGw2xzEJ8HNL7MN-Q0",
+        "episode": [
+          {
+              "number": 1,
+              "title": "New surge",
+              "videoUrl": "https://www.youtube.com/watch?v=7aMOurgDB-o&list=PLRe9ARNnYSY588zvGw2xzEJ8HNL7MN-Q0"
+          },
+          {
+              "number": 2,
+              "title": "Dancing Flowers",
+              "videoUrl": "https://www.youtube.com/watch?v=qM8wxM_mcRw&list=PLRe9ARNnYSY588zvGw2xzEJ8HNL7MN-Q0&index=2"
+          },
+          {
+              "number": 3,
+              "title": "Hangman",
+              "videoUrl": "https://www.youtube.com/watch?v=kSkSvK6Zx_I&list=PLRe9ARNnYSY588zvGw2xzEJ8HNL7MN-Q0&index=3"
+          },
+          {
+              "number": 4,
+              "title": "Deeper layers",
+              "videoUrl": "https://www.youtube.com/watch?v=MAw59zSbGqs&list=PLRe9ARNnYSY588zvGw2xzEJ8HNL7MN-Q0&index=4"
+          },
+          {
+              "number": 5,
+              "title": "Rift",
+              "videoUrl": "https://www.youtube.com/watch?v=8DXoQtTREio&list=PLRe9ARNnYSY588zvGw2xzEJ8HNL7MN-Q0&index=5"
+          }
+        ]
+    },
+    {
+        "otherName": "Fairy Tail",
+        "id": 14,
+        "title": "Fairy Tail",
+        "type":"Movie",
+        "description": "In the mystical land of Fiore, magic exists as an essential part of everyday life. Countless magic guilds lie at the core of all magical activity, and serve as venues for like-minded mages to band together and take on job requests. Among them, Fairy Tail stands out from the rest as a place of strength, spirit, and family.",
+        "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2305500/capsule_616x353.jpg",
+        "genre": "Adventure",
+        "released": "2009-01-01T00:00:00.000Z",
+        "status": "Finished Airing",
+        "videoUrl":"https://www.youtube.com/watch?v=TAFvTP0zhS4",
+        "episode": []
+    },
+    {
+        "otherName": "",
+        "id": 15,
+        "title": "Code Geass",
+        "type":"Movie",
+        "description": "One year has passed since the Black Rebellion, a failed uprising against the Holy Britannian Empire led by the masked vigilante Zero, who is now missing. At a loss without their revolutionary leader, Area 11's resistance group—the Black Knights—find themselves too powerless to combat the brutality inflicted upon the Elevens by Britannia, which has increased significantly in order to crush any hope of a future revolt. ",
+        "imageUrl": "https://m.media-amazon.com/images/S/pv-target-images/f6229414d529451c2677a18db912a09fc8ee78a78669cf7043acbc8d952a6f8c.jpg",
+        "genre": "Mecha",
+        "released": "2006-01-01T00:00:00.000Z",
+        "status": "Finished Airing",
+        "videoUrl":"https://www.youtube.com/watch?v=G8CFuZ9MseQ",
+        "episode": []
+    },
+    {
+        "otherName": "",
+        "id": 16,
+        "title": "Bleach",
+        "type":"Movie",
+        "description": "After a brutal surprise attack by the forces of Quincy King Yhwach, the resident Reapers of the Soul Society lick their wounds and mourn their losses. Many of the surviving Soul Reaper captains train to battle without their Bankai, the ultimate technique wielded by the fiercest warriors",
+        "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1201240/ss_464af8ae35e3a4ee8443286efc43b1e94ba5e517.1920x1080.jpg",
+        "genre": "Action",
+        "released": "2004-01-01T00:00:00.000Z",
+        "status": "Finished Airing",
+        "videoUrl":"https://www.youtube.com/watch?v=gFQZgwMC1As",
+        "episode": []
+    },
+    {
+        "otherName": "",
+        "id": 17,
+        "title": "Clannad: After Story",
+        "type":"Movie",
+        "description": "Clannad: After Story, the sequel to the critically acclaimed slice-of-life series Clannad, begins after Tomoya Okazaki and Nagisa Furukawa graduate from high school. Together, they experience the emotional rollercoaster of growing up. Unable to decide on a course for his future, Tomoya learns the value of a strong work ethic and discovers the strength of Nagisa's support",
+        "imageUrl": "https://rishraffreviews.wordpress.com/wp-content/uploads/2016/10/70213151.jpg",
+        "genre": "Drama",
+        "released": "2008-01-01T00:00:00.000Z",
+        "status": "Finished Airing",
+        "videoUrl":"https://www.youtube.com/watch?v=IecYMqp1N4k",
+        "episode": []
+    },
+    {
+        "otherName": "",
+        "id": 18,
+        "title": "Fate/Zero",
+        "type":"Movie",
+        "description": "With the promise of granting any wish, the omnipotent Holy Grail triggered three wars in the past, each too cruel and fierce to leave a victor. In spite of that, the wealthy Einzbern family is confident that the Fourth Holy Grail War will be different; namely, with a vessel of the Holy Grail now in their grasp.",
+        "imageUrl": "https://miro.medium.com/v2/resize:fit:2000/1*u_J3DBvIwa9cdKWwtWscPA.jpeg",
+        "genre": "Fantasy",
+        "released": "2011-01-01T00:00:00.000Z",
+        "status": "Finished Airing",
+        "videoUrl":"https://www.youtube.com/watch?v=hkQ8Rs5KXRw",
+        "episode": []
+    },
+    {
+        "otherName": "",
+        "id": 19,
+        "title": "Re:Zero - Starting Life in Another World",
+        "type":"TV",
+        "description": "Covered in ice and snow, Elior Forest is the home to dangerous magical beasts and 50 elves frozen in ice. One day, the great spirit Puck helps a young girl break out of her ice prison.Her name is Emilia, a half-elf born with silver hair, long ears, and amethyst eyes—features that resemble the evil Witch who destroyed half the world long ago.",
+        "imageUrl": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1277510/capsule_616x353.jpg",
+        "genre": "Fantasy",
+        "released": "2016-01-01T00:00:00.000Z",
+        "status": "Ongoing",
+        "videoUrl":"https://www.youtube.com/watch?v=Slz_rahWp6Y",
+        "episode": [
+          {
+              "number": 1,
+              "title": "Theatrical malice",
+              "videoUrl": "https://www.youtube.com/watch?v=YuUGWm1IWzo&list=PLRe9ARNnYSY4qYF4swM9KzAuD5YV_4WmM"
+          },
+          {
+              "number": 2,
+              "title": "Ashowdown of fire and ice",
+              "videoUrl": "https://youtube.com/watch?v=aVN8nOsRZdo&list=PLRe9ARNnYSY4qYF4swM9KzAuD5YV_4WmM&index=2"
+          },
+          {
+              "number": 3,
+              "title": "Gorgeous Tiger",
+              "videoUrl": "https://www.youtube.com/watch?v=ClV5g5AlS3I&list=PLRe9ARNnYSY4qYF4swM9KzAuD5YV_4WmM&index=3"
+          },
+          {
+              "number": 4,
+              "title": "The operation to retake city",
+              "videoUrl": "https://www.youtube.com/watch?v=DNYKbjpRFTI&list=PLRe9ARNnYSY4qYF4swM9KzAuD5YV_4WmM&index=4"
+          }
+        ]
+    },
+    {
+        "otherName": "",
+        "id": 20,
+        "title": "No Game No Life",
+        "type":"TV",
+        "description": "No Game No Life is a surreal comedy that follows Sora and Shiro, shut-in NEET siblings and the online gamer duo behind the legendary username Blank. They view the real world as just another lousy game; however, a strange e-mail challenging them to a chess match changes everything—the brother and sister are plunged into an otherworldly realm where they meet Tet, the God of Games",
+        "imageUrl": "https://m.media-amazon.com/images/S/pv-target-images/9472bf28f8f8b81df4271948663e7b8abea5594ae349ef27a958d680d95636b0.jpg",
+        "genre": "Fantasy",
+        "released": "2014-01-01T00:00:00.000Z",
+        "status": "Finished Airing",
+        "videoUrl":"https://www.youtube.com/watch?v=4DySGA_-QQM",
+        "episode": [
+          {
+              "number": "1",
+              "title": "Beginner",
+              "videoUrl": "https://www.youtube.com/watch?v=Y4QCP6f8vg8"
+          },
+          {
+              "number": 2,
+              "title": "Challenger",
+              "videoUrl": "https://www.youtube.com/watch?v=Y4QCP6f8vg8"
+          }
+        ]
+    },
+    {
+        "id": 21,
+        "title": "Ponyo",
+        "type":"Movie",
+        "description": "A young boy named Sosuke rescues a goldfish named Ponyo, and they embark on a fantastic journey of friendship before Ponyo's father forces her to return to the sea. Ponyo's desire to be human upsets the balance of nature and only Ponyo's mother can restore nature's balance and make Ponyo's dreams come true.",
+        "imageUrl": "https://grandteatret.dk/wp-content/uploads/2024/02/Ponyo_poster-scaled.jpg",
+        "genre": "Fiction",
+        "released": "2008-07-19T00:00:00.000Z",
+        "status": "Completed",
+        "otherName": "Ponyo",
+        "videoUrl": "https://www.youtube.com/watch?v=CsR3KVgBzSM",
+        "episode": [
+        ]
+    }
+]  
