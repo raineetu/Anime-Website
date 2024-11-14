@@ -57,16 +57,16 @@ function AnimeList() {
       <div className="pt-[17vh] h-screen">
         <div className="ml-[5vh] space-y-5 pb-[10vh]">
           <hr className="w-[133vh] h-[1px] bg-pink-500 ml-[25vh]" />
-          <h1 className="text-3xl font-semibold text-green-400">
+          <h1 className="text-xl md:text-3xl font-semibold text-green-400">
             A-Z LIST |{" "}
             <span className="text-yellow-300">
               Searching anime ordered by alphabet name A to Z.
             </span>
           </h1>
-          <div className="flex space-x-4">
+          <div className="flex flex-wrap w-full h-full gap-2 justify-center sm:justify-start">
             {/* 'All' button to show all anime */}
             <button
-              className="w-[7vh] h-[4vh] bg-pink-300 text-white rounded-[1vh] shadow-lg shadow-black"
+              className="w-[10vw] sm:w-[7vh] h-[5vh] bg-pink-300 text-white rounded-[1vh] shadow-lg shadow-black"
               onClick={() => handleButtonClick("All")}
             >
               All
@@ -75,7 +75,7 @@ function AnimeList() {
             {alphabet.map((letter) => (
               <button
                 key={letter}
-                className="w-[7vh] h-[4vh] bg-pink-300 text-white rounded-[1vh] shadow-lg shadow-black"
+                className="w-[10vw] sm:w-[7vh] h-[5vh] bg-pink-300 text-white rounded-[1vh] shadow-lg shadow-black"
                 onClick={() => handleButtonClick(letter)}
               >
                 {letter}
@@ -84,7 +84,7 @@ function AnimeList() {
           </div>
         </div>
         <div className="w-[full] flex">
-          <div className="w-3/5 ml-[5vh] mr-2 ">
+          <div className="w-5/5 md:w-3/5 ml-[5vh] mr-2 ">
             <h1 className="text-black font-bold text-2xl border-2 border-yellow-300 bg-yellow-300 rounded-[2vh] text-center p-2">
               Anime List
             </h1>
@@ -102,11 +102,11 @@ function AnimeList() {
               </ul>
             </div>
           </div>
-          <div className="w-2/5">
-          <img
-  src="https://images.fineartamerica.com/images/artworkimages/medium/3/anime-naruto-ganesh.jpg"
-  className="w-[85%] h-[94%] rounded-[2vh] opacity-45 "
-/>
+          <div className="w-2/ hidden sm:block">
+            <img
+              src="https://images.fineartamerica.com/images/artworkimages/medium/3/anime-naruto-ganesh.jpg"
+              className="w-[85%] h-[94%] rounded-[2vh] opacity-45 "
+            />
           </div>
         </div>
       </div>

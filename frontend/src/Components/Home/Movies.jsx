@@ -31,7 +31,7 @@ function Movies() {
 
   return (
     <>
-      <div className="mt-[18vh] mx-8 my-4">
+      <div className="mt-[18vh] mx-4 my-4">
         <div className="items-center">
           <h1 className="text-black font-bold text-2xl border-2 border-yellow-300 bg-yellow-300 rounded-[2vh] text-center p-2">
             Movies
@@ -40,7 +40,8 @@ function Movies() {
       </div>
 
       <div className="flex-1 h-[88vh] w-full pb-5">
-        <div className="grid grid-cols-3 gap-3">
+        {/* Responsive grid: 1 column on small screens, 2 columns on medium, 3 on larger screens */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
           {movies.length > 0 ? (
             movies.map((movie) => (
               <Movie

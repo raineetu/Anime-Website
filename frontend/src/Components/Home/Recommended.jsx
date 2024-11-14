@@ -86,7 +86,6 @@ function Recommended() {
   if (!animeDetails || animeDetails.length === 0) {
     return (
       <div className="px-[6vh] py-2">
-        <h2 className="text-white text-xl">No recommendations available.</h2>
       </div>
     );
   }

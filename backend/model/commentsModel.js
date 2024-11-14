@@ -12,7 +12,7 @@ const commentSchema = new mongoose.Schema({
         required: true, 
     },
     animeTitle: {
-        type: String, // Store the anime title as a string
+        type: String, 
         required: true,
     },
     commentText: {
@@ -32,7 +32,7 @@ const commentSchema = new mongoose.Schema({
     },
     profileImage: {  
         type: String,
-        required: true,  // Make it required to ensure it always has a value
+        required: true, 
     },
 });
 

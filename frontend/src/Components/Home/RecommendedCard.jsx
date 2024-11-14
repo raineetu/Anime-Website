@@ -5,16 +5,18 @@ function RecommendedCard({ id, animeTitle, imageUrl }) {
 
   return (
     <Link to={`/anime/${id}`}>
-      <div className="card bg-base-100 w-[40vh] h-[40vh] mt-[3vh] shadow-white rounded-[30px] ml-[5vh] mb-[4vh] transition-transform duration-200 hover:scale-105">
+      <div className="card bg-base-100 w-full max-w-[40vh] h-[40vh] shadow-white rounded-[20px] mx-auto mb-6 transition-transform duration-200 hover:scale-105">
+        {/* Image container */}
         <figure className="flex justify-center items-center w-full h-full overflow-hidden rounded-t-lg">
           <img 
             src={normalizedImageUrl} 
             alt={animeTitle} 
-            className='w-full h-full object-cover'
+            className='w-full h-full object-cover rounded-[15px]'
           />
         </figure>
-        <div className="text-white flex justify-center items-center mt-2 space-x-2">
-          <p className='font-semibold text-2xl'>{animeTitle}</p>
+        {/* Anime title */}
+        <div className="text-white flex justify-center items-center mt-2">
+          <p className='font-semibold text-lg md:text-2xl text-center'>{animeTitle}</p>
         </div>
       </div>
     </Link>
@@ -22,5 +24,3 @@ function RecommendedCard({ id, animeTitle, imageUrl }) {
 }
 
 export default RecommendedCard;
-
-

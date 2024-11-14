@@ -37,7 +37,7 @@ function VideoPlayer() {
         setAnime(animeRes.data);
         if (animeRes.data.episode.length > 0) {
           setCurrentVideoUrl(animeRes.data.episode[0].videoUrl); 
-        } ////yetti samman ho video ko lagi
+        } 
 
         const reviewsRes = await axios.get(
           `${API_URL}/comments/${animeRes.data.title}`

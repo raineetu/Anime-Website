@@ -19,6 +19,7 @@ import AdminDashboard from "../Admin/AdminDashboard";
 
 export default function Navbar() {
   const [dropdownVisible, setDropdownVisible] = useState(false);
+  const [mdropdownVisible, msetDropdownVisible] = useState(false);
   const [isLoginVisible, setIsLoginVisible] = useState(false);
   const [searchResults, setSearchResults] = useState([]);
   const [input, setInput] = useState("");
@@ -26,7 +27,6 @@ export default function Navbar() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
-  // Fetch data based on search input
   const fetchData = async (value) => {
     try {
       const response = await axios.get("http://localhost:8001/detail");
@@ -66,13 +66,6 @@ export default function Navbar() {
     }
   }, [user]);
 
-  useEffect(() => {
-    // console.log("User from Redux:", user); // This logs user object from Redux state to debug
-    if (user) {
-      setIsLoginVisible(false); // Hide login modal if user exists
-    }
-  }, [user]); // Run this effect whenever `user` changes
-
   const handleLogout = async () => {
     try {
       const res = await axios.post("http://localhost:8001/user/logout");
@@ -87,23 +80,23 @@ export default function Navbar() {
   };
 
   const NavItems = () => (
-    <>
-      <li className="pl-10 text-xl" style={{ display: "inline-block" }}>
+    <div className="flex space-x-7">
+      <li className="text-xl">
         <Link to="/" className="text-white">
           <FontAwesomeIcon icon={faHouseUser} /> Home
         </Link>
       </li>
-      <li className="pl-10 text-xl" style={{ display: "inline-block" }}>
+      <li className="text-xl">
         <Link to="/list" className="hover:text-gray-400 text-white">
           <FontAwesomeIcon icon={faList} /> Anime List
         </Link>
       </li>
-      <li className="pl-10 text-xl" style={{ display: "inline-block" }}>
+      <li className="text-xl">
         <Link to="/movies" className="hover:text-gray-400 text-white">
           <FontAwesomeIcon icon={faFilm} /> Movies
         </Link>
       </li>
-    </>
+    </div>
   );
 
   return (
@@ -116,10 +109,9 @@ export default function Navbar() {
 
         {/* Conditional rendering based on user role */}
         {user && user.role === "admin" ? (
-          /* Show admin navbar: only logo and profile */
-          <div className="flex-1 ">
+          <div className="flex-1 ml-auto">
             {/* Profile */}
-            <div className=" ml-[150vh] ">
+            <div className="ml-[150vh]">
               <div className="avatar cursor-pointer" onClick={toggleDropdown}>
                 <div className="ring-primary ring-offset-base-100 w-14 rounded-full ring ring-offset-7">
                   <img
@@ -158,17 +150,53 @@ export default function Navbar() {
             </div>
           </div>
         ) : (
-          /* Show regular navbar for non-admin or logged-out users */
           <>
             {/* Nav items */}
-            <div className="flex-1 hidden lg:flex text-white justify-center mr-[5vh]">
+            <div className="flex-1 hidden lg:flex justify-center mr-[5vh]">
               <ul className="menu menu-horizontal space-x-7">
                 <NavItems />
               </ul>
             </div>
 
+            {/* Mobile navbar toggle */}
+            <div className="lg:hidden flex items-center mx-[2vh]">
+              <button
+                onClick={() => msetDropdownVisible(!mdropdownVisible)}
+                className="text-white"
+              >
+                <FontAwesomeIcon icon={faList} />
+              </button>
+              {mdropdownVisible && (
+                <div className="absolute  mt-[15vh] w-48 text-white shadow-lg rounded-lg bg-gray-800 bg-opacity-75 shadow-black">
+                  <ul className=" ">
+                    <li className="text-xl">
+                      <Link to="/" className="text-white">
+                        <FontAwesomeIcon icon={faHouseUser} /> Home
+                      </Link>
+                    </li>
+                    <li className="text-xl">
+                      <Link
+                        to="/list"
+                        className="hover:text-gray-400 text-white"
+                      >
+                        <FontAwesomeIcon icon={faList} /> Anime List
+                      </Link>
+                    </li>
+                    <li className="text-xl">
+                      <Link
+                        to="/movies"
+                        className="hover:text-gray-400 text-white"
+                      >
+                        <FontAwesomeIcon icon={faFilm} /> Movies
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+              )}
+            </div>
+
             {/* Search Bar */}
-            <div className="w-[30%] flex">
+            <div className="w-[30%] flex mr-[2vh] md:mx-2">
               <div className="relative flex-none w-1/5 flex items-center space-x-5 justify-start mr-40">
                 <input
                   type="text"
@@ -202,14 +230,16 @@ export default function Navbar() {
                     className="avatar cursor-pointer"
                     onClick={toggleDropdown}
                   >
-                   <div className="ring-primary ring-offset-base-100 w-14 h-14 rounded-full ring ring-offset-7 flex justify-center items-center">
-  <img
-    src={`http://localhost:8001/${user.profileImage.replace(/\\/g, "/")}`}
-    alt="Profile"
-    className="w-full h-full object-cover rounded-full"
-  />
-</div>
-
+                    <div className="ring-primary ring-offset-base-100 w-14 h-14 rounded-full ring ring-offset-7 flex justify-center items-center ml-[3vh] md:ml[1vh]">
+                      <img
+                        src={`http://localhost:8001/${user.profileImage.replace(
+                          /\\/g,
+                          "/"
+                        )}`}
+                        alt="Profile"
+                        className="w-full h-full object-cover rounded-full"
+                      />
+                    </div>
                   </div>
 
                   {dropdownVisible && (
@@ -224,7 +254,6 @@ export default function Navbar() {
                             <span>Profile</span>
                           </li>
                         </Link>
-                        
                         <li
                           className="flex items-center px-4 pb-2 cursor-pointer"
                           onClick={handleLogout}
@@ -245,10 +274,8 @@ export default function Navbar() {
         )}
       </div>
 
-      {/* Show Admin Dashboard if the user is an admin */}
       {user && user.role === "admin" && <AdminDashboard />}
 
-      {/* Show Login Modal */}
       {isLoginVisible && !user && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-35">
           <div>
