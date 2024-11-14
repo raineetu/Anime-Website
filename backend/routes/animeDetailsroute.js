@@ -1,5 +1,5 @@
 import express from 'express';
-import { getDetails, postDetails, updateDetails } from '../controller/animecontroller.js'; // Ensure correct path and import postDetails
+import { getDetails, postDetails, updateDetails } from '../controller/animeController.js';
 
 const router = express.Router();
 
