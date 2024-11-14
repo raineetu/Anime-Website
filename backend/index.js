@@ -5,11 +5,11 @@ import cors from 'cors';
 import cookieParser from 'cookie-parser';
 import fs from 'fs';
 import path from 'path';
-import animeDetailsroute from './routes/animeDetailsRoute.js';
+import animeDetailsRoute from './routes/animeDetailsroute.js';
 import userRoute from './routes/userRoute.js';
 import commentRoutes from './routes/commentRoutes.js';
 import recommendationRoutes from './routes/recommendationRoute.js'; 
-import popularRoute from './routes/popularRoute.js';  // Ensure this path is correct
+import popularRoute from './routes/popularRoute.js';  
 
 dotenv.config();
 
