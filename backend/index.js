@@ -5,7 +5,7 @@ import cors from 'cors';
 import cookieParser from 'cookie-parser';
 import fs from 'fs';
 import path from 'path';
-import animeDetailsRoute from './routes/animeDetailsroute.js';
+import animeDetailsRoute from './routes/animeDetailsRoute.js';
 import userRoute from './routes/userRoute.js';
 import commentRoutes from './routes/commentRoutes.js';
 import recommendationRoutes from './routes/recommendationRoute.js'; 

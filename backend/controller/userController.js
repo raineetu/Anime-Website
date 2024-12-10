@@ -62,9 +62,9 @@ export const login = async (req, res) => {
         // Destructure the email, password, and role from the request body
         const { email, password, role } = req.body;
 
-        console.log("Email:", email);
-        console.log("Password:", password);
-        console.log("Role:", role);
+        // console.log("Email:", email);
+        // console.log("Password:", password);
+        // console.log("Role:", role);
 
         // Validate input fields
         if (!email || !password || !role) {
@@ -113,7 +113,7 @@ export const login = async (req, res) => {
         // Return the response with only the necessary fields
         return res.status(200).json({
             message: `Welcome back ${userWithoutPassword.name}`,
-            user: userWithoutPassword, // Ensure user data is returned without the password
+            user: userWithoutPassword, 
             token,
             success: true,
         });
@@ -137,7 +137,7 @@ export const updateProfile = async (req, res) => {
         console.log("User from request:", req.user);
 
         // Retrieve user from the request
-        const userId = req.user?._id; // Use optional chaining to avoid errors if req.user is undefined
+        const userId = req.user?._id; 
         if (!userId) {
             return res.status(401).json({ message: "Unauthorized access", success: false });
         }

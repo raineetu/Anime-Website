@@ -5,7 +5,7 @@ import Navbar from '../Components/Navbar';
 import luffy from '/luffy1.png';
 
 function AnimeDetail() {
-  const { id } = useParams(); // Extract `id` from URL params
+  const { id } = useParams(); 
   const [anime, setAnime] = useState(null);
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(true);

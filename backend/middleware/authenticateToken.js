@@ -15,11 +15,11 @@ const isAuthenticated = async (req, res, next) => {
 
         // Extract token from "Bearer <token>"
         const token = authHeader.split(' ')[1];
-        console.log("Received token:", token);
+        // console.log("Received token:", token);
 
         // Verify the token using secret key from environment variables
         const decoded = jwt.verify(token, process.env.secretkey);
-        console.log("Decoded token data:", decoded);
+        // console.log("Decoded token data:", decoded);
 
         // Find user by ID in token payload
         const user = await User.findById(decoded.userId).select('name');

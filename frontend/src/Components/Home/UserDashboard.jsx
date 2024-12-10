@@ -13,11 +13,11 @@ function UserDashboard() {
   useEffect(() => {
     // Retrieve user info from localStorage
     const user = JSON.parse(localStorage.getItem('Users'));
-    console.log('User data retrieved:', user); // Debugging
+    console.log('User data retrieved:', user); 
     if (user) {
       setUserName(user.name);
       setEmail(user.email);
-      setProfileImage(user.profileImage);  // You can also set the profile image here if you want
+      setProfileImage(user.profileImage);  
     }
   }, []);
 
@@ -35,7 +35,7 @@ function UserDashboard() {
     formData.append('email', email);
     formData.append('password', password);
     if (profileImage) {
-        formData.append('profilePicture', profileImage); // The field name must match the backend
+        formData.append('profilePicture', profileImage);
     }
 
     try {

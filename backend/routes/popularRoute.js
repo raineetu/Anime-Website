@@ -1,6 +1,6 @@
 // userRoute.js
 import express from 'express';
-import isAuthenticated from "../middleware/authenticateToken.js"; // Ensure the path is correct
+import isAuthenticated from "../middleware/authenticateToken.js"; 
 import { getPopularAnime } from '../controller/popularController.js';
 
 const router = express.Router();

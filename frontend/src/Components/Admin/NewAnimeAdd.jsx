@@ -161,7 +161,7 @@ function NewAnimeAdd() {
 
   return (
     <div className="fixed inset-0 mt-[14vh] flex items-center justify-center z-50">
-      <form className="bg-gray-800 p-6 rounded-md shadow-md w-full max-w-[700px] mx-auto overflow-y-auto max-h-[90vh]">
+      <form className="bg-gray-800 p-6 rounded-md shadow-md w-full max-w-[800px] mx-auto overflow-y-auto max-h-[90vh]">
         <h1 className="text-2xl font-bold text-pink-600 mb-4 text-center">Anime Management</h1>
 
           {error && <div className="text-red-500 mb-4">{error}</div>}

@@ -9,13 +9,14 @@ import toast from "react-hot-toast";
 import moment from "moment";
 import { useSelector, useDispatch } from "react-redux";
 
+
 const API_URL = "http://localhost:8001";
 
 function VideoPlayer() {
   const { id } = useParams();
   const [anime, setAnime] = useState(null);
   const [error, setError] = useState(null);
-  const [currentVideoUrl, setCurrentVideoUrl] = useState(""); //////yo gara 
+  const [currentVideoUrl, setCurrentVideoUrl] = useState("");
   const [userRating, setUserRating] = useState(0);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -33,11 +34,11 @@ function VideoPlayer() {
   useEffect(() => {
     const fetchAnimeData = async () => {
       try {
-        const animeRes = await axios.get(`http://localhost:8001/detail/${id}`); ////api bata video ko leu
+        const animeRes = await axios.get(`http://localhost:8001/detail/${id}`);
         setAnime(animeRes.data);
         if (animeRes.data.episode.length > 0) {
-          setCurrentVideoUrl(animeRes.data.episode[0].videoUrl); 
-        } 
+          setCurrentVideoUrl(animeRes.data.episode[0].videoUrl);
+        }
 
         const reviewsRes = await axios.get(
           `${API_URL}/comments/${animeRes.data.title}`
@@ -80,11 +81,17 @@ function VideoPlayer() {
     }
   };
 
-  const handleEpisodeClick = (videoUrl) => { ////yo click garda chalnu parxa vanera
+  const handleEpisodeClick = (videoUrl) => {
     setCurrentVideoUrl(videoUrl);
   };
 
   const handleSubmitRating = async () => {
+    if (!storedUser) {
+      toast.error("You must be logged in to submit a review!");
+      navigate("/login"); // Redirect to login page
+      return;
+    }
+
     if (!reviewText || userRating === 0) {
       toast.error(
         "Please select a rating and enter a review before submitting!"
@@ -149,7 +156,14 @@ function VideoPlayer() {
         headers: { Authorization: `Bearer ${token}` },
       });
 
+      // Update the state to remove the deleted comment
       setReviews(reviews.filter((review) => review._id !== commentId));
+
+      // Reset the submission status so the user can post a new comment
+      setIsSubmitted(false);
+      setUserReview(null);
+      localStorage.removeItem(`reviewed_${anime.title}`);
+
       toast.success("Comment deleted successfully!");
     } catch (error) {
       console.error(
@@ -240,19 +254,31 @@ function VideoPlayer() {
               Rate this Anime
             </h1>
 
-            <button
-              className={`bg-pink-300 hover:bg-pink-400 text-gray-800 font-bold py-2 px-4 rounded mt-4 ml-[13vh] ${
-                isSubmitted ? "opacity-50 cursor-not-allowed" : ""
-              }`}
-              onClick={() => {
-                if (!isSubmitted) {
-                  setIsModalOpen(true);
-                }
-              }}
-              disabled={isSubmitted} // Disable if review is submitted
-            >
-              {isSubmitted ? "Review Submitted" : "Submit Review"}
-            </button>
+            {storedUser ? (
+              <button
+                className={`bg-pink-300 hover:bg-pink-400 text-gray-800 font-bold py-2 px-4 rounded mt-4 ml-[13vh] ${
+                  isSubmitted ? "opacity-50 cursor-not-allowed" : ""
+                }`}
+                onClick={() => {
+                  if (!isSubmitted) {
+                    setIsModalOpen(true);
+                  }
+                }}
+                disabled={isSubmitted}
+              >
+                {isSubmitted ? "Review Submitted" : "Submit Review"}
+              </button>
+            ) : (
+              <div className="text-white mt-4 ">
+                <p className="ml-2">You must be logged in to comment and review. </p>
+                <button
+                  className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700 ml-[10vh] mt-[2vh]"
+                >
+                  Log in to Review
+                </button>
+              </div>
+            )}
+
             <img src="/handpointing.png" className="w-[15vh] h-[15vh]" />
           </div>
         </div>
@@ -334,7 +360,10 @@ function VideoPlayer() {
                 <div className="flex items-center">
                   <div className="ring-primary ring-offset-base-100 w-14 h-14 rounded-full ring ring-offset-7 flex justify-center items-center">
                     <img
-                      src={`http://localhost:8001/${review.profileImage.replace(/\\/g, "/" )}`}
+                      src={`http://localhost:8001/${review.profileImage.replace(
+                        /\\/g,
+                        "/"
+                      )}`}
                       alt={`${review.userName}'s profile`}
                       className="w-full h-full object-cover rounded-full"
                     />
