@@ -3,7 +3,7 @@
 This is an **Anime Recommendation System** where users are recommended anime based on their preferences and ratings. The system utilizes a **Hybrid Recommendation Algorithm**, combining both **Content-Based Filtering** and **Collaborative Filtering** to provide accurate suggestions tailored to individual users.
 
 ## 🚀 Project Overview
-- For **new users**, the system uses a **Trending Algorithm** to recommend anime based on global user ratings and view counts.
+- For new users, the system uses a **Trending Algorithm** to recommend anime based on global user ratings and view counts.
 - The project is developed using the **MERN stack** (MongoDB, Express.js, React.js, and Node.js).
 
 ## 📊 Recommendation Approach
