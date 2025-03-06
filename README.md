@@ -1,4 +1,4 @@
-# Anime Recommendation System
+ Anime Recommendation System
 
 This is an **Anime Recommendation System** where users are recommended anime based on their preferences and ratings. The system utilizes a **Hybrid Recommendation Algorithm**, combining both **Content-Based Filtering** and **Collaborative Filtering** to provide accurate suggestions tailored to individual users.
 
